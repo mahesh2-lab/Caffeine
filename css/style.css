@@ -1,0 +1,707 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+
+:root {
+  --primary-color: #1b1107;
+  --secondary-color: #ffff;
+}
+
+::-webkit-scrollbar {
+  width: 11px;
+}
+::-webkit-scrollbar-track {
+  background-color: #efdfc5;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  cursor: grab;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container {
+  margin: 40px auto 0;
+  width: 90%;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  justify-content: space-between;
+}
+
+.logo,
+.last {
+  text-align: center;
+}
+
+.logo {
+  width: 14%;
+}
+
+.logo a,
+.last a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo a {
+  font-family: "Abril Fatface", serif;
+  font-size: 40px;
+}
+
+.menu ul {
+  width: 100%;
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 50px;
+  margin: 0;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  position: relative;
+}
+
+.menu ul li a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+}
+.menu ul li a:hover::before {
+  width: 100%;
+}
+
+.last {
+  width: 13%;
+}
+
+.last a {
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  transition: 0.3s;
+}
+.last a:hover {
+  color: var(--primary-color);
+  background-color: #fff;
+}
+
+.hero_sec {
+  display: flex;
+  width: 90%;
+  margin: 70px auto 0;
+  justify-content: space-between;
+}
+
+.hero_text {
+  width: 50%;
+  padding-top: 30px;
+}
+
+.hero_text h1 {
+  color: #fff;
+  font-size: 90px;
+  line-height: 110px;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hero_img {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero_img img {
+  width: 80%;
+}
+
+.hero_text p {
+  color: #fff;
+  font-size: 20px;
+  width: 70%;
+  line-height: 40px;
+  margin-top: 50px;
+}
+
+.hero_btn {
+  display: flex;
+  column-gap: 35px;
+}
+
+.hero_btn .explore-btn {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  padding: 20px 40px;
+  border: 1px solid #fff;
+  transition: 0.3s;
+}
+.hero_btn .order-btn {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  background-color: var(--secondary-color);
+  padding: 20px 40px;
+  transition: 0.3s;
+}
+
+.features_sec {
+  display: flex;
+  width: 100%;
+  margin: 70px auto 0;
+  justify-content: center;
+  background-color: #e6e2dc;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 80px;
+  justify-content: space-between;
+  width: 90%;
+  padding-top: 30px;
+}
+
+.feature {
+  width: 30%;
+  padding: 20px;
+}
+
+.feature img {
+  width: 30%;
+}
+
+.explore_coffees {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.explore_coffees h2 {
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  margin: 70px 0 0;
+  padding: 0;
+}
+
+.coffees {
+  display: flex;
+  gap: 40px;
+  padding: 50px 0;
+}
+
+.coffee {
+  color: #fff;
+  font-size: 20px;
+  font-family: "Merriweather", serif;
+  text-align: center;
+  width: 30%;
+}
+
+.coffee img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.coffee h3 {
+  font-size: 30px;
+}
+
+.coffee p {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.brew_section {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+.brew {
+  margin: 0 auto;
+  width: 90%;
+}
+.brew-header {
+  font-size: 30px;
+  font-family: "Merriweather", serif;
+}
+
+.brew-header p {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-family: "Merriweather", serif;
+}
+
+.brew-steps {
+  display: flex;
+  justify-content: space-around;
+}
+
+.brew-step {
+  margin: 35px;
+  padding: 30px 25px;
+  border: 1px solid #ddd;
+  height: 217px;
+  width: 294px;
+  background-color: #e6e2dc;
+}
+
+.brew-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+.popular_blends {
+  background-color: #dcb288;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.popular_blends .blend_header {
+  text-align: center;
+  width: 60%;
+  font-family: "Merriweather", serif;
+  padding: 0;
+}
+
+.popular_blends .blend_header h1 {
+  color: var(--primary-color);
+  font-size: 70px;
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+  margin: 70px 0 0;
+}
+.popular_blends .blend_header p {
+  color: #9a785d;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  margin: 40px 0 0;
+}
+
+.popular_blends .blend_body {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 80px 0;
+}
+
+.blend_body .blend {
+  padding: 50px;
+  border: 2px solid var(--primary-color);
+  position: relative;
+}
+.blend_body .blend::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 50%;
+  background-color: var(--primary-color);
+}
+.blend_body .blend .blend_image {
+  position: relative;
+  z-index: 2;
+  border: 10px solid #dcb288;
+}
+.blend_body .blend .blend_image img {
+  width: 358px;
+  height: 368px;
+  object-fit: cover;
+}
+.blend_body .blend .blend_text h2 {
+  text-align: center;
+  margin: 0;
+}
+.blend_body .blend .blend_text {
+  font-family: "DM Serif Display", serif;
+  font-size: 35px;
+  letter-spacing: 1px;
+  padding-bottom: 50px;
+}
+
+.blend_body .blend .blend_btn::before {
+  content: "order now";
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  font-size: 40px;
+  justify-content: center;
+  font-family: "Merriweather", serif;
+  align-items: center;
+  border-top: 2px solid var(--primary-color);
+  background-color: #c7ac8f;
+  bottom: 0;
+  left: 0;
+}
+
+.testimonials_sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #efdfc5;
+  padding: 80px 0;
+}
+
+.testimonials_sec .header h1 {
+  color: var(--primary-color);
+  font-size: 70px;
+  text-align: center;
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+.testimonials_sec .cards {
+  width: 100%;
+  margin: auto;
+  overflow-x: auto;
+  display: flex;
+  align-items: flex-end;
+  height: 671px;
+  scroll-snap-type: x mandatory;
+}
+
+.testimonials_sec .testimonials_body {
+  display: flex;
+  column-gap: 30px;
+}
+
+.testimonials_body .testimonial {
+  scroll-snap-align: start;
+  width: 1088px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 30px;
+  scroll-snap-align: center;
+  background-color: var(--primary-color);
+}
+
+.testimonials_body .testimonial .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+  border: 6px solid #fff;
+  transform: translateY(-80%);
+  object-fit: cover;
+}
+
+.testimonials_body .testimonial .review {
+  width: 90%;
+  color: #fff;
+  font-size: 30px;
+  font-family: "Merriweather", serif;
+  font-weight: 200;
+  word-spacing: 2px;
+  text-wrap: pretty;
+  line-height: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.testimonials_body .testimonial .review p {
+  margin: 0;
+}
+
+.testimonials_body .testimonial .reviwer_name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials_body .testimonial .reviwer_name h3 {
+  color: #fff;
+  font-family: "Abril Fatface", serif;
+  font-size: 30px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.testimonials_body .testimonial .reviwer_name .starts img {
+  height: 60px;
+}
+
+/* +++++++++++++++++++++++++++++++++++About Us section+++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.about_sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6e2dc;
+}
+.about_sec h1 {
+  font-size: 60px;
+  font-family: "Merriweather", serif;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+.about_sec .about {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  padding: 100px 0;
+}
+.about_sec .about .about_text {
+  display: grid;
+  width: 100%;
+  row-gap: 50px;
+  text-wrap: pretty;
+}
+
+.about_sec .about .about_text h1 {
+  color: var(--primary-color);
+  font-size: 70px;
+  text-align: left;
+  margin: 0;
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 2px;
+}
+
+.about_sec .about .about_text p {
+  color: var(--primary-color);
+  font-size: 20px;
+  text-align: left;
+  margin: 0;
+  line-height: 25px;
+  font-family: "Merriweather", serif;
+  font-weight: 500;
+}
+.about_sec .about .about_img {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.about_sec .about .about_img img {
+  width: 85%;
+}
+
+.about_sec .about .about_text .about-btn {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 20px;
+  width: 120px;
+  color: var(--primary-color);
+  font-family: "Merriweather", serif;
+  font-weight: 500;
+  padding: 10px 20px;
+  position: relative;
+  border: 1px solid var(--primary-color);
+  transition: 0.3s;
+}
+
+.about_sec .about .about_text a:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+/* +++++++++++++++++++++++++++++++++++News Us section+++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.news_sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dcb288;
+}
+
+.news_sec .news {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.news_sec .news .news_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 44%;
+}
+.news_sec .news .news_text h2 {
+  margin: 0;
+  font-size: 75px;
+  font-family: "Abril Fatface", serif;
+  color: var(--primary-color);
+  font-weight: 100;
+}
+
+.news_sec .news .news_input {
+  margin: 0;
+  width: 50%;
+  font-size: 20px;
+  row-gap: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Merriweather", serif;
+  color: var(--primary-color);
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.news_sec .news .news_input p {
+  color: var(--primary-color);
+  width: 75%;
+}
+
+.news_sec .news .news_input .inputBx {
+  width: 75%;
+}
+.news_sec .news .news_input .inputBx form{
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.news_sec .news .news_input .inputBx form input{
+  height: 74px;
+  width: 70%;
+  font-size: 20px;
+  padding: 0;
+  font-weight: 300;
+
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  padding-left: 30px;
+  background-color: #bc9d80;
+  outline: none;
+  border: none;
+}
+.inputBx form button{
+  height: 74px;
+  width: 24.5%;
+  background-color: var(--primary-color);
+  font-size: 20px;
+  cursor: pointer;
+  font-family: 'Merriweather', serif;
+  outline: none;
+}
+.inputBx form button i{
+  color: #fff;
+}
+/* +++++++++++++++++++++++++++++++++++Footer section+++++++++++++++++++++++++++++++++++++++++++++++ */
+#coffee-footer {
+  background-color: #1b1107;
+  color: #ffff;
+  padding: 2rem;
+  font-family: 'Merriweather', serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #dcb288;
+}
+
+.footer-about, .footer-nav, .footer-contact, .footer-social {
+  flex: 1;
+  margin: 1rem;
+}
+.footer-about p{
+  line-height: 30px;
+}
+
+#coffee-footer h3 {
+  color: #dcb288;
+  margin-bottom: 1rem;
+  font-family: 'Abril Fatface', serif;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-nav ul li a {
+  color: #ffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-nav ul li a:hover {
+  color: #dcb288;
+}
+
+.footer-contact a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: #dcb288;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.social-icons a {
+  color: #ffff;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #dcb288;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1rem;
+  color: #dcb288;
+}
